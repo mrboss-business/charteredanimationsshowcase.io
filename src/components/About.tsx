@@ -1,8 +1,6 @@
 import founderPhoto from "@/assets/founder-photo.jpg";
-
 const About = () => {
-  return (
-    <section id="about" className="py-section bg-coffee">
+  return <section id="about" className="py-section bg-coffee">
       <div className="max-w-container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Text Card */}
@@ -41,7 +39,7 @@ const About = () => {
                 <div className="font-body text-sm text-coffee/70">Projects Done</div>
               </div>
               <div className="text-center">
-                <div className="font-heading font-bold text-2xl text-coffee">200+</div>
+                <div className="font-heading font-bold text-2xl text-coffee">93+</div>
                 <div className="font-body text-sm text-coffee/70">Happy Clients</div>
               </div>
             </div>
@@ -52,11 +50,7 @@ const About = () => {
             <div className="relative">
               {/* Main Photo */}
               <div className="relative z-10">
-                <img
-                  src={founderPhoto}
-                  alt="Chandru Kshatriya - Founder of Chartered Animations"
-                  className="w-full max-w-md mx-auto rounded-2xl shadow-xl"
-                />
+                <img src={founderPhoto} alt="Chandru Kshatriya - Founder of Chartered Animations" className="w-full max-w-md mx-auto rounded-2xl shadow-xl" />
               </div>
               
               {/* Background Elements */}
@@ -82,8 +76,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

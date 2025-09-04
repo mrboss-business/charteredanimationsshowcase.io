@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-bg.jpg";
-
 const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen relative overflow-hidden hero-gradient">
+  return <section id="home" className="min-h-screen relative overflow-hidden hero-gradient">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-shaded/80"></div>
       </div>
 
@@ -37,23 +34,14 @@ const Hero = () => {
             </div>
 
             {/* Tagline */}
-            <p className="text-milk/90 font-body text-xl md:text-2xl font-light leading-relaxed">
-              "Shaping Every Creator's Dream into Reality."
-            </p>
+            <p className="text-milk/90 font-body text-xl md:text-2xl font-light leading-relaxed">Shaping Every Creator's Dream into Reality.</p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="btn-lift bg-coffee text-milk hover:bg-coffee/90 px-8 py-3 text-lg font-semibold"
-              >
+              <Button size="lg" className="btn-lift bg-coffee text-milk hover:bg-coffee/90 px-8 py-3 text-lg font-semibold">
                 Explore Our Work
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="btn-lift bg-transparent border-2 border-milk text-milk hover:bg-milk hover:text-coffee px-8 py-3 text-lg font-semibold"
-              >
+              <Button size="lg" variant="outline" className="btn-lift bg-transparent border-2 border-milk text-milk hover:bg-milk hover:text-coffee px-8 py-3 text-lg font-semibold">
                 Our Services
               </Button>
             </div>
@@ -98,8 +86,6 @@ const Hero = () => {
           <div className="w-1 h-3 bg-milk/50 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
