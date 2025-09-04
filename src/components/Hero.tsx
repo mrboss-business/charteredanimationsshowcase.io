@@ -60,17 +60,7 @@ const Hero = () => {
           {/* Right Content - Hero Media */}
           <div className="lg:flex justify-center items-center fade-up-delay">
             <div className="relative">
-              <div className="w-full max-w-lg mx-auto">
-                {/* Placeholder for hero video/media */}
-                <div className="aspect-video bg-milk/10 rounded-xl border border-milk/20 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-16 h-16 bg-milk/20 rounded-full flex items-center justify-center mx-auto">
-                      <div className="w-0 h-0 border-l-6 border-l-milk border-t-4 border-t-transparent border-b-4 border-b-transparent ml-1"></div>
-                    </div>
-                    <p className="text-milk/70 font-body">Demo Reel Coming Soon</p>
-                  </div>
-                </div>
-              </div>
+              
               {/* Glow effect */}
               <div className="absolute -inset-4 bg-milk/5 rounded-2xl blur-xl -z-10"></div>
             </div>
