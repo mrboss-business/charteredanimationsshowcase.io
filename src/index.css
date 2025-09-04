@@ -86,7 +86,40 @@
   body {
     @apply bg-background text-foreground font-body;
     font-feature-settings: "rlig" 1, "calt" 1;
-    transition: background-color 0.8s ease-in-out;
+  }
+
+  /* Section Background Transitions */
+  section {
+    transition: background-color 1s ease-in-out;
+  }
+
+  /* Section Background Colors */
+  .section-header {
+    background-color: hsl(var(--shaded-black));
+  }
+
+  .section-home {
+    background-color: hsl(var(--shaded-black));
+  }
+
+  .section-about {
+    background-color: hsl(var(--warm-gray));
+  }
+
+  .section-services {
+    background-color: hsl(var(--milk-yellow));
+  }
+
+  .section-portfolio {
+    background-color: hsl(var(--coffee-brown));
+  }
+
+  .section-contact {
+    background-color: hsl(var(--shaded-black));
+  }
+
+  .section-footer {
+    background-color: hsl(var(--shaded-black));
   }
 
   /* Typography Classes */
