@@ -16,9 +16,7 @@ const Hero = () => {
           <div className="space-y-8 fade-up">
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-2 bg-milk/10 border border-milk/20 rounded-full">
-              <span className="text-milk/90 font-body font-medium text-sm">
-                Premium 3D & Editing Agency
-              </span>
+              <span className="text-milk/90 font-body font-medium text-sm">Social Media Management Agency</span>
             </div>
 
             {/* Main Title */}
