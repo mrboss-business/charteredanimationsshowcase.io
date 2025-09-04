@@ -4,27 +4,25 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, Mail, Clock, Youtube, Instagram, Linkedin, MessageCircle } from "lucide-react";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     projectType: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
   };
-
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
   };
-
-  return (
-    <section id="contact" className="py-section bg-coffee">
+  return <section id="contact" className="py-section bg-coffee">
       <div className="max-w-container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Content */}
@@ -96,31 +94,17 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-coffee font-semibold mb-2">Name *</label>
-                  <Input
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => handleInputChange('name', e.target.value)}
-                    className="form-input bg-white border-coffee/20 text-coffee"
-                    placeholder="Your full name"
-                  />
+                  <Input type="text" required value={formData.name} onChange={e => handleInputChange('name', e.target.value)} className="form-input bg-white border-coffee/20 text-coffee" placeholder="Your full name" />
                 </div>
                 <div>
                   <label className="block text-coffee font-semibold mb-2">Email *</label>
-                  <Input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => handleInputChange('email', e.target.value)}
-                    className="form-input bg-white border-coffee/20 text-coffee"
-                    placeholder="your@email.com"
-                  />
+                  <Input type="email" required value={formData.email} onChange={e => handleInputChange('email', e.target.value)} className="form-input bg-white border-coffee/20 text-coffee" placeholder="your@email.com" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-coffee font-semibold mb-2">Project Type</label>
-                <Select onValueChange={(value) => handleInputChange('projectType', value)}>
+                <Select onValueChange={value => handleInputChange('projectType', value)}>
                   <SelectTrigger className="bg-white border-coffee/20 text-coffee">
                     <SelectValue placeholder="Select project type" />
                   </SelectTrigger>
@@ -137,45 +121,26 @@ const Contact = () => {
 
               <div>
                 <label className="block text-coffee font-semibold mb-2">Message *</label>
-                <Textarea
-                  required
-                  value={formData.message}
-                  onChange={(e) => handleInputChange('message', e.target.value)}
-                  className="form-input bg-white border-coffee/20 text-coffee min-h-32"
-                  placeholder="Tell us about your project, timeline, and budget..."
-                />
+                <Textarea required value={formData.message} onChange={e => handleInputChange('message', e.target.value)} className="form-input bg-white border-coffee/20 text-coffee min-h-32" placeholder="Tell us about your project, timeline, and budget..." />
               </div>
 
               <div>
                 <label className="block text-coffee font-semibold mb-2">Attach Files (Optional)</label>
-                <Input
-                  type="file"
-                  multiple
-                  accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
-                  className="form-input bg-white border-coffee/20 text-coffee"
-                />
+                <Input type="file" multiple accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" className="form-input bg-white border-coffee/20 text-coffee" />
                 <p className="text-coffee/60 text-sm mt-1">
                   Supported: JPG, PNG, PDF, DOC (Max 10MB each)
                 </p>
               </div>
 
-              <Button 
-                type="submit" 
-                size="lg" 
-                className="w-full btn-lift bg-shaded text-milk hover:bg-shaded/90 py-4 text-lg font-semibold"
-              >
+              <Button type="submit" size="lg" className="w-full btn-lift bg-shaded text-milk hover:bg-shaded/90 py-4 text-lg font-semibold">
                 Send Message
               </Button>
 
-              <p className="text-coffee/60 text-sm text-center">
-                We'll reply within 24-48 hours. Usually much faster!
-              </p>
+              <p className="text-coffee/60 text-sm text-center">We'll reply within 24 hours. Usually much faster!</p>
             </form>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
