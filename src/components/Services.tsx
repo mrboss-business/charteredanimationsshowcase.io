@@ -89,7 +89,7 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12 fade-up">
+        <div className="text-center mt-8 fade-up">
           <p className="text-coffee/70 font-body mb-6">
             Need something custom? Let's discuss your unique requirements.
           </p>
