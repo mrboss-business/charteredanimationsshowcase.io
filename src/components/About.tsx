@@ -15,11 +15,7 @@ const About = () => {
                 What started as a passion has now grown into a dedicated studio where creativity meets professionalism.
               </p>
               
-              <p>
-                Over the years, we've worked with countless creators, helping them engage their audience and 
-                strengthen their digital presence. I believe that if you want to go fast, you can go alone — 
-                but if you want to achieve big dreams, you need a strong team.
-              </p>
+              <p>Over the years, we've worked with  creators, helping them engage their audience and strengthen their digital presence. I believe that if you want to go fast, you can go alone — but if you want to achieve big dreams, you need a strong team.</p>
               
               <p>
                 With over <strong className="text-coffee">6 years of experience</strong> in the field, I've built a team that brings 
@@ -31,11 +27,11 @@ const About = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-coffee/20">
               <div className="text-center">
-                <div className="font-heading font-bold text-2xl text-coffee">6+</div>
+                <div className="font-heading font-bold text-2xl text-coffee">4+</div>
                 <div className="font-body text-sm text-coffee/70">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="font-heading font-bold text-2xl text-coffee">500+</div>
+                <div className="font-heading font-bold text-2xl text-coffee">276+</div>
                 <div className="font-body text-sm text-coffee/70">Projects Done</div>
               </div>
               <div className="text-center">
