@@ -1,32 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Upload } from "lucide-react";
-import { useState, useRef } from "react";
 import heroImage from "@/assets/hero-bg.jpg";
 const Hero = () => {
-  const [uploadedImage, setUploadedImage] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const handleImageClick = () => {
-    fileInputRef.current?.click();
-  };
-
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file && file.type.startsWith('image/')) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        setUploadedImage(e.target?.result as string);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const handleKeyPress = (event: React.KeyboardEvent) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      handleImageClick();
-    }
-  };
 
   return <section id="home" className="min-h-screen relative overflow-hidden hero-gradient">
       {/* Background Image */}
@@ -87,44 +61,15 @@ const Hero = () => {
           {/* Right Content - Hero Image Block */}
           <div className="flex justify-center items-center fade-up-delay">
             <div className="w-full max-w-[500px] lg:max-w-none">
-              <div
-                className="hero-image-container"
-                onClick={handleImageClick}
-                onKeyDown={handleKeyPress}
-                tabIndex={0}
-                role="button"
-                aria-label="Upload hero featured image"
-              >
-                {/* Hidden file input */}
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileChange}
-                  className="hidden"
-                  aria-hidden="true"
+              <div className="relative p-4 bg-milk/5 backdrop-blur-sm rounded-2xl border border-milk/10">
+                <img
+                  src="/lovable-uploads/cea7a28e-7241-498a-89ba-2de1efa93580.png"
+                  alt="Chartered Animations featured artwork"
+                  className="w-full h-auto rounded-xl shadow-2xl shadow-coffee/30"
+                  style={{
+                    filter: 'drop-shadow(0 0 20px rgba(245, 230, 179, 0.3))'
+                  }}
                 />
-                
-                {/* Featured Project Badge */}
-                <div className="hero-image-badge">
-                  Featured Project
-                </div>
-
-                {/* Image Content */}
-                {uploadedImage ? (
-                  <img
-                    src={uploadedImage}
-                    alt="Hero featured image"
-                    className="hero-image"
-                  />
-                ) : (
-                  <div className="hero-image-placeholder">
-                    <Upload className="w-8 h-8 text-milk/70" />
-                    <span className="text-milk/70 font-body text-sm font-medium">
-                      Upload Your Image
-                    </span>
-                  </div>
-                )}
               </div>
             </div>
           </div>
