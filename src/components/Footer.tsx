@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Youtube, Instagram, Linkedin } from "lucide-react";
+import { Youtube, Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -70,25 +70,31 @@ const Footer = () => {
                 <p className="text-milk/70 font-body text-sm mb-3">Follow us:</p>
                 <div className="flex gap-3">
                   <a 
-                    href="#" 
+                    href="https://www.youtube.com/@charteredanimations" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
                     aria-label="YouTube"
                   >
                     <Youtube className="w-5 h-5 text-milk group-hover:text-milk" />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://www.instagram.com/charteredanimations/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
                     aria-label="Instagram"
                   >
                     <Instagram className="w-5 h-5 text-milk group-hover:text-milk" />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://wa.me/9294848428" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
-                    aria-label="LinkedIn"
+                    aria-label="WhatsApp"
                   >
-                    <Linkedin className="w-5 h-5 text-milk group-hover:text-milk" />
+                    <MessageCircle className="w-5 h-5 text-milk group-hover:text-milk" />
                   </a>
                 </div>
               </div>
