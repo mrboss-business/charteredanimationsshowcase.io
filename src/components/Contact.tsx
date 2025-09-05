@@ -71,16 +71,31 @@ const Contact = () => {
             <div>
               <h3 className="text-milk font-heading font-semibold mb-4">Follow Our Work</h3>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group">
+                <a 
+                  href="https://www.youtube.com/@charteredanimations" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
+                  aria-label="YouTube"
+                >
                   <Youtube className="w-5 h-5 text-milk group-hover:text-milk" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group">
+                <a 
+                  href="https://www.instagram.com/charteredanimations/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
+                  aria-label="Instagram"
+                >
                   <Instagram className="w-5 h-5 text-milk group-hover:text-milk" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group">
-                  <Linkedin className="w-5 h-5 text-milk group-hover:text-milk" />
-                </a>
-                <a href="#" className="btn-lift w-auto px-4 h-10 bg-green-500 rounded-lg flex items-center gap-2 hover:bg-green-600 transition-colors">
+                <a 
+                  href="https://wa.me/9294848428" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-lift w-auto px-4 h-10 bg-green-500 rounded-lg flex items-center gap-2 hover:bg-green-600 transition-colors"
+                  aria-label="WhatsApp"
+                >
                   <MessageCircle className="w-4 h-4 text-white" />
                   <span className="text-white text-sm font-medium">WhatsApp</span>
                 </a>
