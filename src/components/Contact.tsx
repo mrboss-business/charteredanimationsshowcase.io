@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-milk font-semibold">Email</p>
-                  <p className="text-milk/70">hello@charteredanimations.com</p>
+                  <p className="text-milk/70">charteredanimations@gmail.com</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-milk font-semibold">Office Hours</p>
-                  <p className="text-milk/70">Mon - Fri, 9AM - 6PM IST</p>
+                  <p className="text-milk/70">Mon - Sat, 9AM - 10PM IST</p>
                 </div>
               </div>
             </div>

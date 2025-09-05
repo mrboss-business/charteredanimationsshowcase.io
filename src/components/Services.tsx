@@ -93,9 +93,7 @@ const Services = () => {
           <p className="text-coffee/70 font-body mb-6">
             Need something custom? Let's discuss your unique requirements.
           </p>
-          <button className="btn-lift bg-coffee text-milk px-8 py-3 rounded-xl font-semibold hover:bg-coffee/90 transition-colors">
-            Start a Project
-          </button>
+          
         </div>
       </div>
     </section>;
