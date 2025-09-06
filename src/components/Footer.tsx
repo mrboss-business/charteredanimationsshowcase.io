@@ -1,19 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Youtube, Instagram, MessageCircle } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const quickLinks = [
-    { href: "#about", label: "About" },
-    { href: "#services", label: "Services" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#contact", label: "Contact" },
-  ];
-
-  return (
-    <footer className="bg-shaded py-16">
+  const quickLinks = [{
+    href: "#about",
+    label: "About"
+  }, {
+    href: "#services",
+    label: "Services"
+  }, {
+    href: "#portfolio",
+    label: "Portfolio"
+  }, {
+    href: "#contact",
+    label: "Contact"
+  }];
+  return <footer className="bg-shaded py-[19px]">
       <div className="max-w-container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Left - Logo & Tagline */}
@@ -38,15 +41,9 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-milk text-lg mb-4">Quick Links</h4>
             <div className="space-y-2">
-              {quickLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="block text-milk/70 hover:text-milk font-body transition-colors"
-                >
+              {quickLinks.map(link => <a key={link.href} href={link.href} className="block text-milk/70 hover:text-milk font-body transition-colors">
                   {link.label}
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
 
@@ -55,11 +52,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-milk text-lg mb-4">Stay Updated</h4>
             <div className="space-y-4">
               <div className="flex gap-2">
-                <Input
-                  type="email"
-                  placeholder="Your email"
-                  className="bg-milk/10 border-milk/20 text-milk placeholder:text-milk/50"
-                />
+                <Input type="email" placeholder="Your email" className="bg-milk/10 border-milk/20 text-milk placeholder:text-milk/50" />
                 <Button className="bg-milk text-coffee hover:bg-milk/90 px-4">
                   Subscribe
                 </Button>
@@ -69,31 +62,13 @@ const Footer = () => {
               <div>
                 <p className="text-milk/70 font-body text-sm mb-3">Follow us:</p>
                 <div className="flex gap-3">
-                  <a 
-                    href="https://www.youtube.com/@charteredanimations" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
-                    aria-label="YouTube"
-                  >
+                  <a href="https://www.youtube.com/@charteredanimations" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group" aria-label="YouTube">
                     <Youtube className="w-5 h-5 text-milk group-hover:text-milk" />
                   </a>
-                  <a 
-                    href="https://www.instagram.com/charteredanimations/" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
-                    aria-label="Instagram"
-                  >
+                  <a href="https://www.instagram.com/charteredanimations/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group" aria-label="Instagram">
                     <Instagram className="w-5 h-5 text-milk group-hover:text-milk" />
                   </a>
-                  <a 
-                    href="https://wa.me/9294848428" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
-                    aria-label="WhatsApp"
-                  >
+                  <a href="https://wa.me/9294848428" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group" aria-label="WhatsApp">
                     <MessageCircle className="w-5 h-5 text-milk group-hover:text-milk" />
                   </a>
                 </div>
@@ -115,8 +90,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

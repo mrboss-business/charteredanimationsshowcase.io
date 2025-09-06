@@ -8,7 +8,6 @@ import portfolio4 from "@/assets/portfolio-4.jpg";
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
-  
   const portfolioItems = [{
     id: 1,
     title: "3D Animation Edit",
@@ -45,10 +44,9 @@ const Portfolio = () => {
     description: "High-quality professional video editing with cinematic techniques.",
     videoUrl: "https://drive.google.com/file/d/1KFh0tj06T3vNKlPHTh7GLasWudP6F9cS/preview"
   }];
-  
   const filters = ["All", "Animation", "Event Editing", "Design", "Motion Graphics", "Video Editing"];
   const filteredItems = activeFilter === "All" ? portfolioItems : portfolioItems.filter(item => item.category === activeFilter);
-  return <section id="portfolio" className="py-section bg-shaded">
+  return <section id="portfolio" className="bg-shaded py-[21px]">
       <div className="max-w-container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 fade-up">
@@ -69,8 +67,7 @@ const Portfolio = () => {
 
         {/* Portfolio Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 fade-up">
-          {filteredItems.map(item => (
-            <Dialog key={item.id}>
+          {filteredItems.map(item => <Dialog key={item.id}>
               <DialogTrigger asChild>
                 <div className="portfolio-item group cursor-pointer">
                   {/* Image */}
@@ -112,13 +109,7 @@ const Portfolio = () => {
                 <div className="relative w-full h-full">
                   {/* Video Container */}
                   <div className="w-full h-full rounded-lg overflow-hidden">
-                    <iframe
-                      src={item.videoUrl}
-                      className="w-full h-full"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      title={item.title}
-                    />
+                    <iframe src={item.videoUrl} className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title={item.title} />
                   </div>
                   
                   {/* Project Info Overlay */}
@@ -135,8 +126,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </DialogContent>
-            </Dialog>
-          ))}
+            </Dialog>)}
         </div>
 
         {/* Load More Button */}

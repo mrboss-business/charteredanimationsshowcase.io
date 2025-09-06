@@ -22,7 +22,7 @@ const Contact = () => {
       [field]: value
     }));
   };
-  return <section id="contact" className="py-section bg-coffee">
+  return <section id="contact" className="bg-coffee py-[15px]">
       <div className="max-w-container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Content */}
@@ -71,31 +71,13 @@ const Contact = () => {
             <div>
               <h3 className="text-milk font-heading font-semibold mb-4">Follow Our Work</h3>
               <div className="flex gap-4">
-                <a 
-                  href="https://www.youtube.com/@charteredanimations" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
-                  aria-label="YouTube"
-                >
+                <a href="https://www.youtube.com/@charteredanimations" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group" aria-label="YouTube">
                   <Youtube className="w-5 h-5 text-milk group-hover:text-milk" />
                 </a>
-                <a 
-                  href="https://www.instagram.com/charteredanimations/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group"
-                  aria-label="Instagram"
-                >
+                <a href="https://www.instagram.com/charteredanimations/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-milk/10 rounded-lg flex items-center justify-center hover:bg-milk/20 transition-colors group" aria-label="Instagram">
                   <Instagram className="w-5 h-5 text-milk group-hover:text-milk" />
                 </a>
-                <a 
-                  href="https://wa.me/9294848428" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-lift w-auto px-4 h-10 bg-green-500 rounded-lg flex items-center gap-2 hover:bg-green-600 transition-colors"
-                  aria-label="WhatsApp"
-                >
+                <a href="https://wa.me/9294848428" target="_blank" rel="noopener noreferrer" className="btn-lift w-auto px-4 h-10 bg-green-500 rounded-lg flex items-center gap-2 hover:bg-green-600 transition-colors" aria-label="WhatsApp">
                   <MessageCircle className="w-4 h-4 text-white" />
                   <span className="text-white text-sm font-medium">WhatsApp</span>
                 </a>
@@ -105,7 +87,7 @@ const Contact = () => {
 
           {/* Right Content - Form */}
           <div className="fade-up-delay">
-            <form onSubmit={handleSubmit} className="card-elegant bg-milk p-8 space-y-6">
+            <form onSubmit={handleSubmit} className="card-elegant bg-milk p-8 space-y-6 px-[30px] py-[9px]">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-coffee font-semibold mb-2">Name *</label>
