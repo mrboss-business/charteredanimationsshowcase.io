@@ -48,7 +48,7 @@ const Services = () => {
     title: "Graphic Design",
     description: "Logos, branding & marketing collaterals."
   }];
-  return <section id="services" className="py-section bg-milk">
+  return <section id="services" className="bg-milk py-[4px]">
       <div className="max-w-container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 fade-up">
