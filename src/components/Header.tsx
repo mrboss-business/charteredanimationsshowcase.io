@@ -15,6 +15,14 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
@@ -63,7 +71,11 @@ const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button variant="default" className="btn-lift bg-coffee text-milk hover:bg-coffee/90">
+          <Button 
+            variant="default" 
+            className="btn-lift bg-coffee text-milk hover:bg-coffee/90"
+            onClick={scrollToContact}
+          >
             Get a Quote
           </Button>
         </div>
@@ -92,7 +104,10 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button className="w-full mt-4 bg-coffee text-milk hover:bg-coffee/90">
+            <Button 
+              className="w-full mt-4 bg-coffee text-milk hover:bg-coffee/90"
+              onClick={scrollToContact}
+            >
               Get a Quote
             </Button>
           </nav>
