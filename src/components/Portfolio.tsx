@@ -131,9 +131,15 @@ const Portfolio = () => {
 
         {/* Load More Button */}
         <div className="text-center mt-12">
-          <button className="btn-lift bg-milk/10 border-2 border-milk text-milk px-8 py-3 rounded-xl font-semibold hover:bg-milk hover:text-coffee transition-colors">
+          <a 
+            href="https://drive.google.com/drive/folders/1nSm025HLn5LiHt5wSEPM2-_ZF5UTgcW1?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-lift bg-milk/10 border-2 border-milk text-milk px-8 py-3 rounded-xl font-semibold hover:bg-milk hover:text-coffee transition-colors inline-block"
+            title="View all projects in Google Drive"
+          >
             Load More Projects
-          </button>
+          </a>
         </div>
       </div>
     </section>;
