@@ -4,7 +4,7 @@ const Hero = () => {
 
   return <section id="home" className="min-h-screen relative overflow-hidden hero-gradient">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      <div className="absolute inset-0 bg-cover bg-top bg-no-repeat" style={{
       backgroundImage: `url(${heroImage})`
     }}>
         <div className="absolute inset-0 bg-shaded/80"></div>

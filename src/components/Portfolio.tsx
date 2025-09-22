@@ -12,35 +12,35 @@ const Portfolio = () => {
     id: 1,
     title: "3D Animation Edit",
     category: "Animation",
-    image: portfolio1,
+    image: portfolio2,
     description: "Professional 3D animation showcasing advanced techniques and storytelling.",
     videoUrl: "https://drive.google.com/file/d/1958E6guYTqJYfUx8_53DMixm0SdNsOqy/preview"
   }, {
     id: 2,
     title: "Function Edit",
     category: "Event Editing",
-    image: portfolio2,
+    image: portfolio4,
     description: "High-energy event video capturing memorable moments with dynamic editing.",
     videoUrl: "https://drive.google.com/file/d/1piLADp6p90RAUk8qXHUmdukSDBVZCGsM/preview"
   }, {
     id: 3,
     title: "Graphic Design",
     category: "Design",
-    image: portfolio3,
+    image: portfolio1,
     description: "Creative graphic design solutions with modern visual aesthetics.",
     videoUrl: "https://drive.google.com/file/d/1Bp7OsZEHC3S_BVYhqtTAx7AZAMxMTzoJ/preview"
   }, {
     id: 4,
     title: "Motion Graphic Edit",
     category: "Motion Graphics",
-    image: portfolio4,
+    image: portfolio3,
     description: "Dynamic motion graphics with smooth animations and visual effects.",
     videoUrl: "https://drive.google.com/file/d/1fD9eQmBfb8ojw5m6FwHHHOrmdRYM1crv/preview"
   }, {
     id: 5,
     title: "Professional Edit",
     category: "Video Editing",
-    image: portfolio1,
+    image: portfolio2,
     description: "High-quality professional video editing with cinematic techniques.",
     videoUrl: "https://drive.google.com/file/d/1KFh0tj06T3vNKlPHTh7GLasWudP6F9cS/preview"
   }];
